@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FFFAFA;
+}
+
+/*header start*/
+header{
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+header h1{
+  color: white;
+  font-size: 100px;
+}
+header a{
+  color: white;
+  text-decoration: none;
+  padding: 60px;
+ }
+
+header a:hover{
+  color:rgb(255, 0, 0);
+}
+/*header end*/
+
+/*hero start*/
+.hero{
+  background-image: url(./badminton-background-dqn50jtswzsszbwf.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+.hero h1{
+  color: rgb(255, 255, 255);
+  font-size: 400%;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-shadow: 
+        -3px -1px 0 black,  
+         1px -1px 0 black,
+        -0px  1px 0 black,
+         1px  1px 0 black;
+}
+
+.hero p{
+  width: 50%;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.hero a{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 13px 35px;
+  background-color: #000000;
+  font-weight: 540;
+  border-radius: 50px;
+}
+.hero .btn{
+  margin-top: 30px;
+}
+
+.hero .btn .Apply{
+  color: rgb(255, 255, 255);
+}
+
+.hero .btn .Apply:hover{
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  transition: 0.3s ease;
+  box-shadow: 0 0 80px #ff0000;
+}
+hr{
+  border: 1px solid black;
+}
+/*hero end*/
+
+/*Features*/
+#provide{
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+  height:450px;
+  /*background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);*/
+  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+#provide .pro-base{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 5rem;
+
+}
+
+#provide .pro-box1{
+  /*background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);*/
+  background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+  text-align:center;
+  border: 3px solid #000000;
+  border-radius: 2%;
+  height: 250px;
+}
+
+#provide .pro-box1 img{
+  width: 3.3rem;
+  padding-left: 10px;
+
+}
+
+#provide .pro-box1 h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  padding: 13px 0 20px 0;
+}
+#provide .pro-box1 p{
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  
+}
+
+#provide h1{
+  color: rgb(255, 255, 255);
+font-size: 70px;
+}
+
+
+/*Slider*/
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust this value to your desired slider height */
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;/* Light gray background */
+}
+
+.slide img {
+  max-width: 100%; /* Adjust this value to control image width */
+  max-height: 100%; /* Adjust this value to control image height */
+  object-fit: contain;
+  border-radius: 8px; /* Optional: adds rounded corners to images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+/*Slider end*/
+footer {
+  background-color: #050505;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
